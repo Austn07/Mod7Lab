@@ -52,15 +52,15 @@
 			#blueyellow {
 			  background-image: linear-gradient(to right, blue, green, yellow);
 			}
-
+			body {
+			  background-image: linear-gradient(lightyellow, gold, lightyellow);
+			}
 		</style>
 	</head>
 	<body>
 
-		<h1>Grid Elements</h1>
-
+		<h1>Grid Container</h1>
 		<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
 		<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
 
 		<div class="grid-container">
@@ -74,10 +74,15 @@
 		  <div class="grid-item" style="background-color: yellow">8th</div>
 		  <div class="grid-item" id="blueyellow">IX</div>  
 		</div>
+		<br>
+		<br>
 		<div class="flex-container">
 		  <div class="flex-item-left">1</div>
 		  <div class="flex-item-right">2</div>
 		</div>
+	  <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+	  <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+	  <h1>Flexbox<h1>
 	</body>
 </html>
 
