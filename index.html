@@ -7,17 +7,52 @@
 			  column-gap: 50px;
 			  row-gap: 50px;
 			  grid-template-columns: auto auto auto;
-			  background-color: #2196F3;
+			  background-color: black;
 			  padding: 10px;
 			}
 
 			.grid-item {
 			  background-color: rgba(255, 255, 255, 0.8);
-			  border: 1px solid rgba(0, 0, 0, 0.8);
+			  border: 5px solid white;
 			  padding: 20px;
 			  font-size: 30px;
 			  text-align: center;
 			}
+			* {
+			  box-sizing: border-box;
+			}
+
+			.flex-container {
+			  display: flex;
+			  flex-wrap: wrap;
+			  font-size: 30px;
+			  text-align: center;
+			  border: 5px solid black;
+			}
+
+			.flex-item-left {
+			  background-image: linear-gradient(to right, lightblue, navy);
+			  color: black;
+			  padding: 10px;
+			  flex: 50%;
+			}
+
+			.flex-item-right {
+			  background-image: linear-gradient(to right, maroon, lightpink);
+			  color: white;
+			  padding: 10px;
+			  flex: 50%;
+			}
+			#yellowred {
+			  background-image: linear-gradient(to right, yellow, orange, red);
+			}
+			#redblue {
+			  background-image: linear-gradient(to right, red, purple, blue);
+			}
+			#blueyellow {
+			  background-image: linear-gradient(to right, blue, green, yellow);
+			}
+
 		</style>
 	</head>
 	<body>
@@ -31,15 +66,18 @@
 		<div class="grid-container">
 		  <div class="grid-item" style="background-color: red">first</div>
 		  <div class="grid-item" style="background-color: blue">2nd</div>
-		  <div class="grid-item" style="background-color: purple">III</div>  
+		  <div class="grid-item" id="redblue">III</div>  
 		  <div class="grid-item" style="background-color: yellow">fourth</div>
 		  <div class="grid-item" style="background-color: red">5th</div>
-		  <div class="grid-item" style="background-color: orange">VI</div>  
+		  <div class="grid-item" id="yellowred">VI</div>  
 		  <div class="grid-item" style="background-color: blue">seventh</div>
 		  <div class="grid-item" style="background-color: yellow">8th</div>
-		  <div class="grid-item" style="background-color: green">IX</div>  
+		  <div class="grid-item" id="blueyellow">IX</div>  
 		</div>
-
+		<div class="flex-container">
+		  <div class="flex-item-left">1</div>
+		  <div class="flex-item-right">2</div>
+		</div>
 	</body>
 </html>
 
